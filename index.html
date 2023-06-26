@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестування</title>
+    <meta charset="UTF-8">
+    <style>
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Тестування</h1>
+
+<h2>Логічна функція: І-НЕ (AND-NOT)</h2>
+<p>Введіть значення для перевірки:</p>
+<input type="checkbox" id="inputValue">
+<button onclick="checkLogic()">Перевірити</button>
+
+<p id="result"></p>
+
+<script>
+    function checkLogic() {
+        var inputValue = document.getElementById('inputValue').checked;
+        var result = document.getElementById('result');
+
+        if (inputValue === true) {
+            result.innerText = 'Результат: Хибність';
+        } else {
+            result.innerText = 'Результат: Істинність';
+        }
+    }
+</script>
+</body>
+</html>
